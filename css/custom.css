@@ -1,0 +1,339 @@
+/* common css */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1em;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+/*ANIMATE*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.first {
+background-color: #000;
+}
+
+.second {
+background-color: #000;
+left: 33.3%;
+}
+
+.third {
+background-color: #000;
+left: 66.6%;
+}
+/* navbar */
+.navbar-light{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    transition: .5s;
+}
+.navbar-light.Muncul{
+    background-color: #d24d57;
+}
+.navbar li{
+    margin-right: 30px;
+}
+.navbar-light .navbar-brand {
+   color: #fff;
+   transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #d24d57
+}
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: #d24d57
+}
+/* jumbotron */
+#jumbotron{
+    height: 640px;
+    width: 100%;
+    background: url('../img/beach.jpg') no-repeat center center;
+    background-size: cover;
+    margin-top: -70px;
+}
+#jumbotron::after{
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+	background-size: cover;
+	width: 100%;
+	height: 570px;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+#jumbotron p {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    padding-top: 10%;
+    transition: 1s;
+    opacity: 0;
+}
+#jumbotron span {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    padding-top: 10%;
+    margin-top: 10px;
+    opacity: 0;
+    transition: 1s;
+    color: #fff;
+}
+#jumbotron p.Muncul {
+    padding-top: 20%;
+    opacity: 1;
+}
+#jumbotron span.Muncul {
+    padding-top: 20%;
+    opacity: 1;
+}
+#jumbotron p span.typed-text {
+    font-weight: normal;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+#jumbotron p span.cursor {
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    width: 8px;
+    height: 30px;
+    animation: blink 1s infinite;
+}
+#jumbotron p span.cursor.typing {
+    animation: none;
+}
+#jumbotron a{
+    color:#fff;
+    margin-left: 50px;
+    margin-top: 280px;
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    z-index: 99;
+    transition: 1s;
+    opacity: 0;
+}
+#jumbotron .bounce-3 a{
+    margin-top: 20px;
+    opacity: 1;
+}
+#jumbotron a.Muncul{
+    margin-top: 20px;
+    opacity: 1;
+}
+#jumbotron a:hover{
+    color: grey;
+}
+@keyframes blink {
+0%  { background-color: #ccc; }
+49% { background-color: #ccc; }
+50% { background-color: transparent; }
+99% { background-color: transparent; }
+100%  { background-color: #ccc; }
+}
+/* bounce effect */
+.stage {
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    margin: 0 auto 200px auto;
+    transform-origin: bottom;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    transition: .5s;
+}
+.box.Muncul {
+    opacity: 1;
+}
+.fa-chevron-down{
+    font-size: 24px;
+}
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+@keyframes bounce-3 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-100px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+/* project */
+#project{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+#project .portfolio{
+    margin-bottom: 20px;
+}
+#project .p1 .portfolio{
+    transition: 1s;
+    transform: translateX(-450px);
+    opacity: 0;
+}
+#project .p1 .portfolio.Muncul{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#project .p2 .portfolio{
+    transition: 1s;
+    transform: translateX(450px);
+    opacity: 0;
+}
+#project .p2 .portfolio.Muncul{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#project .p3 .portfolio{
+    transition: 1s;
+    transform: translateX(-450px);
+    opacity: 0;
+}
+#project .p3 .portfolio.Muncul{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#project .p4 .portfolio{
+    transition: 1s;
+    transform: translateX(450px);
+    opacity: 0;
+}
+#project .p4 .portfolio.Muncul{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#project img{
+    width: 100%;
+}
+#project hr{
+    border: 1px solid black;
+    width: 0px;
+    margin-left: 0px;
+    transition: 1s;
+    opacity: 1;
+}
+#project .p1 hr.Muncul{
+    width: 540px;
+    opacity: 1;
+}
+#project .p2 hr.Muncul{
+    width: 540px;
+    opacity: 1;
+}
+#project .p3 hr.Muncul{
+    width: 540px;
+    opacity: 1;
+}
+#project .p4 hr.Muncul{
+    width: 540px;
+    opacity: 1;
+}
+#project h1{
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    font-size: 135px;
+    position: relative;
+    left: 1px;
+}
+#project .col-md-6:nth-child(2){
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+#project .col-md-6:nth-child(3){
+    margin-top: -200px;
+}
+#project h4{
+    margin-left: 100px;
+    transition: 1s;
+    opacity: 0;
+}
+#project h4.Muncul{
+    margin-left: 0px;
+    opacity: 1;
+}
+/* about */
+#about{
+    height: 500px;
+    width: 100%;
+    background: url('../img/nature.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 5%;
+}
+#about img{
+    width: 200px;
+}
+#about a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    transition: .5s;
+}
+#about a:hover{
+    background-color: #26cbc5;
+    border: 1px solid #26cbc5;
+}
+/* contact */
+#contact{
+    background-color: #d24d57;
+    width: 100%;
+    height: 200px;
+    padding-top: 5%;
+}
+#contact a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: #000;
+    height: 100px;
+    padding-top: 3%;
+}
+footer p{
+    color: #fff;
+
+}

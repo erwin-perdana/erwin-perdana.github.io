@@ -1,0 +1,201 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .navbar-light {
+        width: 100%;
+    }
+    .navbar-light.Muncul{
+        background-color: #d24d57;
+        width: 100%;
+    }
+    #jumbotron {
+        height: 569px;
+    }
+    #jumbotron::after {  
+        height: 500px;
+    }
+    #jumbotron p.Muncul {
+        padding-top: 28%;
+        opacity: 1;
+    }
+    #project .p1 hr.Muncul {
+        width: 450px;
+    }
+    #project .p2 hr.Muncul {
+        width: 450px;
+    }
+    #project .p3 hr.Muncul {
+        width: 450px;
+    }
+    #project .p4 hr.Muncul {
+        width: 450px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar-light {
+        width: 91%;
+    }
+    .navbar-light.Muncul {
+        background-color: #d24d57;
+        width: 91%;
+    }
+    #jumbotron {
+        padding-top: 10%;
+        height: 500px;
+    }
+    #jumbotron::after {
+        height: 430px;
+    }
+    #jumbotron p {
+        font-size: 40px;
+    }
+    #jumbotron span {
+        font-size: 20px;
+    }
+    #project h1 {
+        font-size: 100px;
+        left: 120px;
+    }
+    #project .p1 hr.Muncul {
+        width: 325px;
+    }
+    #project .p2 hr.Muncul {
+        width: 325px;
+    }
+    #project .p3 hr.Muncul {
+        width: 325px;
+    }
+    #project .p4 hr.Muncul {
+        width: 325px;
+    }
+    #contact {
+        height: 150px;
+    }
+    footer {
+        height: 70px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .navbar-light {
+        width: 97%;
+    }
+    .navbar-light.Muncul {
+        background-color: #d24d57;
+        width: 97%;
+    }
+    #project h1 {
+        left: 49px;
+    }
+    #jumbotron {
+        padding-top: 20%;
+    }
+    #contact {
+        padding-top: 7%;
+    }
+    #jumbotron p{
+        font-size: 30px;
+    }
+    #project .p1 .portfolio{
+        transition: 1s;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    #project .p2 .portfolio{
+        transition: 1s;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    #project .p3 .portfolio{
+        transition: 1s;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    #project .p4 .portfolio{
+        transition: 1s;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    #project .col-md-6:nth-child(2) {
+        margin-top: 0px;
+        margin-bottom: 190px;
+    }
+    #project .p1 hr.Muncul{
+        width: 500px;
+        opacity: 1;
+    }
+    #project .p2 hr.Muncul{
+        width: 500px;
+        opacity: 1;
+    }
+    #project .p3 hr.Muncul{
+        width: 500px;
+        opacity: 1;
+    }
+    #project .p4 hr.Muncul{
+        width: 500px;
+        opacity: 1;
+    }
+    footer {
+        padding-top: 4%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-light {
+        width: 92%;
+    }
+    .navbar-light.Muncul {
+        background-color: #d24d57;
+        width: 92%;
+    }
+    #jumbotron {
+        padding-top: 25%;
+    }
+    #jumbotron::after {
+        height: 230px;
+    }
+    #jumbotron p{
+        font-size: 30px;
+    }
+    #jumbotron {
+        height: 300px;
+    }
+    #jumbotron .stage{
+        display: none;
+    }
+    #project h1 {
+        font-size: 60px;
+    }
+    #project .p1 hr.Muncul {
+        width: 340px;
+        opacity: 1;
+    }
+    #project .p2 hr.Muncul {
+        width: 340px;
+        opacity: 1;
+    }
+    #project .p3 hr.Muncul {
+        width: 340px;
+        opacity: 1;
+    }
+    #project .p4 hr.Muncul {
+        width: 340px;
+        opacity: 1;
+    }
+    #contact {
+        height: 120px;
+    }
+    footer {
+        height: 50px;
+        padding-top: 4%;
+    }
+}
+
+
+
+
+
