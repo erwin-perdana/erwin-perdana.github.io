@@ -293,6 +293,12 @@ left: 66.6%;
     margin-left: 0px;
     opacity: 1;
 }
+#project .up{
+    margin-top: -130px;
+}
+#project td{
+    font-family: 'Courier New', Courier, monospace;
+}
 /* about */
 #about{
     height: 500px;
